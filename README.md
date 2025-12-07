@@ -56,15 +56,22 @@ Supports future scalability (DB storage, GUI, export options)
 | Optimized Algorithm Design         | Sorting & search on transaction records           |
 
 ## 📂 Project Structure
-📁 PersonalFinanceManager
-│
-├── Main.java               // Entry point
-├── Transaction.java        // Base class (OOP & abstraction)
-├── Income.java             // Inherited class
-├── Expense.java            // Inherited class
-├── FinanceService.java     // Business logic + Collections
-└── Reportable.java         // Interface for reporting
 
+```
+`
+📁 Project Structure (File System Layout)
+Assuming the project is named PersonalFinanceManager, the structure would look like this:
+
+PersonalFinanceManager/
+├── src/
+│   ├── Expense.java
+│   ├── FinanceService.java
+│   ├── Income.java
+│   ├── Main.java
+│   ├── Reportable.java
+│   └── Transaction.java
+└── README.md
+```
 
 ## 🛠 Installation & Setup
 # Clone the repository
