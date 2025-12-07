@@ -4,21 +4,21 @@ A console-based Java application designed to help users track income, expenses, 
 
 ## 📑 Table of Contents
 
-Overview
+1.[Overview](#Overview)
 
-Features
+2.[Features](#Features)
 
-Course Outcomes Implemented
+3.[Course Outcomes](#Implemented)
 
-Project Structure
+4.[Project Structure](#ProjectStructure)
 
-Installation & Setup
+5.[Installation & Setup](#Installation&Setup)
 
-Usage
+6.[Usage](#Usage)
 
-Technical Highlights
+7.[Technical Highlights](#TechnicalHightlights)
 
-Contributors
+8.[Contributors](#Contributors)
 
 ## 📘 Overview
 
@@ -39,49 +39,64 @@ Clear menu-driven interface
 Supports future scalability (DB storage, GUI, export options)
 
 ## 🎓 Course Outcomes Implemented
-Course Outcome	Demonstrated Through
-Programming Constructs	Loops, conditional statements, arrays
-Object-Oriented Programming	Classes, objects, inheritance, polymorphism
-Abstraction & Interfaces	Reportable interface
-Exception Handling	Input validation, file operations
-Recursion	Summary calculation and menu operations
-File I/O	Persistent saving of transactions
-Collections Framework	Storing dynamic transaction lists
-Bitwise Operations	Optimized internal validation logic
-Algorithm Design	Efficient transaction lookup and data processing
-📂 Project Structure
+| Concept                            | Implementation in Project                         |
+| ---------------------------------- | ------------------------------------------------- |
+| Fundamental Programming Constructs | Variables, conditionals, loops                    |
+| 1D & 2D Arrays                     | Used for storing UI menu and sample category data |
+| Strings                            | Parsing transaction details                       |
+| Bitwise Operations                 | Flag-based categorization                         |
+| Recursion                          | Utility methods (e.g., summation)                 |
+| OOP – Classes, Objects             | Main architecture                                 |
+| Inheritance & Polymorphism         | Income & Expense extending Transaction            |
+| Abstraction & Interfaces           | `Reportable` interface                            |
+| Exception Handling                 | Input validation                                  |
+| File I/O                           | Saving & loading financial records                |
+| Generics                           | Used in collections for type safety               |
+| Collections Framework              | `ArrayList` for storing transactions              |
+| Optimized Algorithm Design         | Sorting & search on transaction records           |
+
+## 📂 Project Structure
 📁 PersonalFinanceManager
 │
-├── Transaction.java
-├── Income.java
-├── Expense.java
-├── Reportable.java
-├── FinanceService.java
-└── Main.java
+├── Main.java               // Entry point
+├── Transaction.java        // Base class (OOP & abstraction)
+├── Income.java             // Inherited class
+├── Expense.java            // Inherited class
+├── FinanceService.java     // Business logic + Collections
+└── Reportable.java         // Interface for reporting
+
 
 ## 🛠 Installation & Setup
-Requirements
-Requirement	Version
-Java JDK	8 or later
-IDE (Optional)	IntelliJ / Eclipse / VS Code
-Steps
-git clone https://github.com/karthiktalla-9392/personal-finance-manager.git
+# Clone the repository
+git clone https://github.com/your-username/personal-finance-manager.git
+
+# Navigate into the project folder
 cd personal-finance-manager
+
+# Compile all Java files
 javac *.java
+
+# Run the application
 java Main
 
+
 ## ▶️ Usage
+1️⃣ Run the program
+2️⃣ Choose actions from the menu:
 
-After launching the program, a console menu will appear:
+Add Income 💵
 
------ Personal Finance Manager -----
+Add Expense 🧾
+
+View Transaction Reports 📊
+
+3️⃣ Exit to save data automatically
+
+Example menu:
 1. Add Income
 2. Add Expense
-3. View Transactions
-4. Generate Report
-5. Exit
-Enter your choice:
-
+3. Display Report
+4. Exit
 
 Users can continue adding data until they choose Exit, with information stored automatically.
 
